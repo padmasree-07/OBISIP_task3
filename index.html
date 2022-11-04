@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Web App</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        
+        <h1 style="text-align: center;">TODO  WEB APP</h1>
+    </header>
+
+    <!-- Main Area -->
+    <main>
+        <div class="input-container">
+            
+            <div id="msg">Enter the tasks list</div>
+            <form>
+                <label for="task"></label>
+                <input type="text" id="userinput" name="task" placeholder="e.g Pay Bills...">
+                <input type="text" id="namelist" name="namelist" placeholder="e.g Shopping List...">
+                <input type="button" value="Add" id="btn" onclick="tasklist()" title="✔️ Adds an item to list">
+                <button onclick="reset()" id="reset" title="🔃 Refreshes the page">Reset</button>
+            </form>
+            <br>
+            <p id="warning"></p>
+            <p id="warning1"></p> 
+        </div>
+
+        <!-- Container -->
+        <div id="containertodo">
+            <div class="todo"></div>
+            <div id="todolistbr" class="todolist"></div>
+        </div>
+    </main>
+
+   
+</body>
+
+<!-- Javascript -->
+<script src="main.js"></script>
+
+</html>
